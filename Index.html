@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Like and Subscribe Game</title>
+<style>
+body{font-family:Arial;text-align:center;background:#111;color:white;margin-top:50px;}
+button{padding:20px 30px;font-size:20px;border:none;border-radius:10px;cursor:pointer;background:#ff0055;color:white;}
+.counter{font-size:40px;margin-top:20px;}
+</style>
+</head>
+<body>
+<h1>👍 Like and Subscribe Game</h1>
+<p>Click button to get likes!</p>
+
+<button onclick="like()">LIKE 👍</button>
+<div class="counter" id="count">0</div>
+
+<script>
+let count = 0;
+function like(){
+  count++;
+  document.getElementById("count").innerText = count;
+}
+</script>
+
+</body>
+</html>
